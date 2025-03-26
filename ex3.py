@@ -31,3 +31,8 @@ print(f"Model Decision Tree:")
 print(f"R²: {r2_tree:.4f}")
 print(f"MSE: {mse_tree:.4f}")
 print(f"MAE: {mae_tree:.4f}")
+
+plt.figure(figsize=(20, 10))
+plot_tree(tree_model, filled=True, feature_names=X.columns, fontsize=12)
+plt.title("Arborele de decizie pentru regresie")
+plt.show()
